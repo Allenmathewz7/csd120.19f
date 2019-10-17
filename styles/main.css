@@ -1,18 +1,54 @@
 @CHARSET "UTF-8";
-body 
-   {background-color: #f4bbdb }   
+body {
+    background-color: #f4bbdb;
+    font-family: 'Quicksand', sans-serif;
+}   
 h1 {
-    color: #d24646 }
+    color: #d24646 ;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+    font-family: 'Titillium Web', sans-serif;
+}
 h2 {
-    color: #f57777 }
+    color: #f57777 ;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+    font-family: 'Titillium Web', sans-serif;
+}
 a {
-    color: #95887d }
- .hype {
-     color: #0b23d6 }   
+    color: #95887d ;
+    text-decoration: none;
+}
+.hype {
+     color: #0b23d6 
+}   
 nav {
-    color: #010101 }    
+    color: #010101
+}    
 .byline {
-    color: #33aa3380 }
+    color: #33aa3380;
+    font-size: 70%;
+}
  #page-copyright {
-     color: #0bdd00 }   
+    color: #0bdd00 ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+ }   
  
+       
+.bio p { 
+    text-indent: 3em;
+}
+       
+footer { 
+    font-size: 12px;
+    text-align: center;
+}
+       
+header nav ul {
+    list-style: none;
+}
+
+ul {
+    list-style: circle;
+}
