@@ -5,13 +5,11 @@ body {
 }   
 h1 {
     color: #d24646 ;
-    background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
     font-family: 'Titillium Web', sans-serif;
 }
 h2 {
     color: #f57777 ;
-    background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -43,6 +41,7 @@ nav {
 footer { 
     font-size: 12px;
     text-align: center;
+    margin-bottom: 2em;
 }
        
 header nav ul {
@@ -52,3 +51,37 @@ header nav ul {
 ul {
     list-style: circle;
 }
+.width-wrap {
+    max-width: 1024px;
+    min-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 3em;
+    border-left:1px solid rgba(0, 0, 0, 0.3);
+    border-right:1px solid rgba(0, 0, 0, 0.3);
+    border-bottom:1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px rgba(255, 0, 0, 0.3);
+    background-color: #ffe4e1;
+    -webkit-box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.3);
+    -moz-box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.3);
+}
+.hype {list-style: none;
+              padding:0
+              }
+body{padding-top: 0;
+     padding-bottom: 0;
+     }
+.mugshot{box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.5);
+        }
+hr {
+    width:50%;
+    min-width:300px;
+    margin-top:3em;
+    margin-bottom:2em;
+    border-top:3px solid #00ffff;
+    bottom-dotted-border:8px solid #00ffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}        
