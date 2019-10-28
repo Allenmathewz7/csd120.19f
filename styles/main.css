@@ -4,14 +4,24 @@ body {
     font-family: 'Quicksand', sans-serif;
 }   
 h1 {
-    color: #d24646 ;
+    color: transparent; ;
     background-repeat: repeat-x;
     font-family: 'Titillium Web', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: #eee;
+    background: linear-gradient(#eee, #097921);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 h2 {
-    color: #f57777 ;
+    color: transparent; ;
     background-repeat: repeat-x;
     font-family: 'Titillium Web', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: #eee;
+    background: linear-gradient(#eee, #097921);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 a {
     color: #95887d ;
@@ -46,6 +56,8 @@ footer {
        
 header nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -62,7 +74,7 @@ ul {
     border-left:1px solid rgba(0, 0, 0, 0.3);
     border-right:1px solid rgba(0, 0, 0, 0.3);
     border-bottom:1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.3);
     background-color: #ffe4e1;
     -webkit-box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.3);
@@ -73,15 +85,18 @@ ul {
 body{padding-top: 0;
      padding-bottom: 0;
      }
-.mugshot{box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.5);
-        }
-hr {
-    width:50%;
+.mugshot img {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+footer hr {
+    width:50vw;
     min-width:300px;
     margin-top:3em;
     margin-bottom:2em;
-    border-top:3px solid #00ffff;
-    bottom-dotted-border:8px solid #00ffff;
+    border-top: 3px solid #00ffff;
+    border-bottom:8px dotted #00ffff;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    border-left: none;
+    border-right: none;
 }        
