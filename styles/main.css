@@ -100,3 +100,47 @@ footer hr {
     border-left: none;
     border-right: none;
 }        
+* {
+    box-sizing: border-box; }
+.paperclip {background-image: url("/images/paperclip.png");
+             }
+.mugshot {float:right;
+          position: relative;
+          top:-1em;
+      }
+nav {float: right;
+    }
+header nav li{float:left;
+             }
+nav a {text-decoration: none;
+       padding-right: 10px;
+       padding-top: 1em;
+       padding-bottom: 0.5em;
+       margin-left: 1em;
+       margin-right: 1em;
+       }
+header {border-top-style: solid;
+        border-top-color: rgba(0, 0, 0, 0.1);
+        margin-left: -2em;
+        margin-right: -2em;
+        margin-left: 2em;
+        margin-right: 2em;
+        }       
+header nav { margin-left: 1em;
+             margin-right: 1em;
+             border-bottom-color: rgba(0, 0, 0, 0.3);
+             border-bottom-style: dotted;
+             border-width: 1px;
+             margin-top: -4px;
+             }      
+             
+header a:hover {
+            border-top-style: solid;
+            border-width: 4px;
+            border-color: #0099cc;
+           }             
+.back-to-top {text-align:right;
+              margin-right: -0.5;
+              position: static;
+              bottom: 3.5em;
+              }           
