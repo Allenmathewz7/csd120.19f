@@ -233,6 +233,7 @@ body{
                   display: grid;
                   grid-template-columns: 25% 25% 25% 25%;
                   width: 100%
+                
 }
 .row-span-2{
        grid-row: span 2;
@@ -244,4 +245,14 @@ body{
 .gallery-thumbnails img {
     width: 100%;
     display: block;
+     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.gallery-thumbnails img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
