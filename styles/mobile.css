@@ -1,58 +1,72 @@
-@media screen and (max-width: 768px)
-       {
-           footer hr
-           {
-               display: none;}
-           
-           .paperclip
-                    {
-               display: none;}
-           
-           .mugshot 
-           { float: none;
-            margin-left: 0;
-            margin-right: 0;}
-            
-            main 
-              {
-                  display: block;
-               }
-               .row-span-2{
-       grid-row: span 2;
-      }
+@media screen and (max-width: 768px) {
+    footer hr {
+        display: none;
+    }
+
+    .paperclip {
+        display: none;
+    }
+
+    .mugshot {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main {
+        display: block;
+    }
+
+    .row-span-2.col-span-2 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
     
-      .col-span-2{
-       grid-column: span 2;
-       }
-       header nav ul {
-           display: flex;
-           flex-direction: column;
-           text-align: center;
-       }
-       header a:hover
-       {
-           border: 0;
-           text-decoration:  underline;
-       }
-       .burger,
-.burger::before,
-.burger::after {
-   width: 24px;            
-border-top: 4px solid black;
-   }
-.burger::before,
-.burger::after {
-  content: "";
-  display: block;
-  position: absolute;}
-.burger {
-  height: 16px;
-  cursor: pointer;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
- }
-.burger::before{top: 4px; }  
-  .burger::after{top: 12px; } 
-  }
-   
+    header a {
+        border: 0;
+    }
+    header a:hover {
+        border: 0;
+        text-decoration: underline;
+    }
+
+    .burger,
+    .burger::before,
+    .burger::after {
+        width: 40px;
+        border-top: 5px solid black;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    .burger {
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+    }
+
+    .burger::before {
+        top: 5px;
+    }
+
+    .burger::after {
+        top: 15px;
+    }
+
+}
