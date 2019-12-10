@@ -153,11 +153,11 @@ footer hr {
 }
 
 nav ul {
-    
+
 }
 
 header nav li {
-    
+
 }
 
 nav a {
@@ -216,7 +216,7 @@ main {
 }
 .bio{
     grid-column: span 2;
-    
+
 }
 #useful-links,
 .glossary{
@@ -233,7 +233,7 @@ body{
                   display: grid;
                   grid-template-columns: 25% 25% 25% 25%;
                   width: 100%
-                
+
 }
 .row-span-2{
        grid-row: span 2;
@@ -255,4 +255,52 @@ body{
 img {
     max-width: 100%;
     height: auto;
+}
+table{
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.1);
+    padding-bottom: 3em;
+    padding-top: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 3px solid #0bdd00;
+    border-right: 3px solid #0bdd00;
+}
+th {
+    background: rgba(0, 0, 0, 0.2);
+}
+tr:nth-child(odd) {background: rgba(0, 0, 0, 0.2);}
+#call1{
+    border-top: 3px solid #ffe4e1;
+}
+#call2 {
+    border-top: 3px solid #ffe4e1;
+}
+th, td {
+    border-right: 3px solid #ffe4e1;
+}
+.survey{
+    grid-column: span 2;
+}
+form{
+    display: grid;
+}
+label{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.button{
+    margin-top: 1em;
+    justify-self: end;
+    font-size: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-color: firebrick;
+    background-color: gold;
+    background-image: linear-gradient(to right, rgb(255, 0, 157), rgb(226, 129, 19));
+}
+#burger-toggle{
+    display:none;
 }

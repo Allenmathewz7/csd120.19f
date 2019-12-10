@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand%7CTitillium+Web&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/baguetteBox.css">
+    <link rel="stylesheet" href="styles/baguetteBox.js">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand%7CTitillium+Web&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+
     <link rel=" apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff"> 
+    <meta name="theme-color" content="#ffffff">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,8 +26,9 @@
 <div class="width-wrap">
     <header id="top">
         <nav>
-        <div class="burger">
-         </div>
+        <input type="checkbox" id="burger-toggle">
+        <label class="burger" for="burger-toggle">
+        </label>
             <ul>
                 <li><a href="index.html">Home</a> </li>
                 <li><a href="links.html">Links</a> </li>
@@ -41,11 +44,11 @@
         <div class="paperclip">
         </div>
             <a href="images/myown.jpg"><img src="images/myowntu.jpg" alt="Its me!"></a>
-        </figure>    
+        </figure>
         <p>Hello! My name is Allen Mathew Benny. I am a Computer Programmer student at Sault College, Sault Ste Marie, Ontario.</p>
         <p>Every day the level our technology is evoking everyone the world. I have been impressed me a lot in different ways. So I choose this program to get more idea and knowledg about the programming.</p>
-    </section> 
-    
+    </section>
+
     <section class="favourites">
         <h2>My three favorate actors in this world</h2>
         <ol type="1">
@@ -54,27 +57,114 @@
         <li>Johnny Depp</li>
         </ol>
     </section>
-        
-    <section>   
+
+    <section>
         <h2>Haiku</h2>
         <p>
           <span style="background-color:#ffffa6;">
         O snail<br>
         Climb Mount Fiji,<br>
         But slowly,slowly!</span></p>
-        
-        
+
+
         <p>Trusting the Buddha, goodand bad,<br>
         I bid farewell<br>
         To the departing year.</p>
-        
+
         <p>Everything I touch<br>
         with tenderness, alas,<br>
-        pricks like a bramble.      
+        pricks like a bramble.
         <span class="byline"><em>by <strong>Kobayashi Issa</strong></em>
         </span>
         </p>
-    </section> 
+    </section>
+
+     <section>
+    <table>
+    <h2>My Sault College Courses</h2>
+    <tr id="call3">
+    <th>Term
+    </th>
+    <th>Code
+    </th>
+    <th>Cource Name
+    </th>
+    </tr>
+    <tr id="call1">
+    <th rowspan="5">Fall
+    </th>
+    <td>CSD105
+    </td>
+    <td>Python
+    </td>
+    </tr>
+    <tr>
+
+    <td>CSD120
+    </td>
+    <td>INTRODUCTION TO WEB
+    </td>
+    </tr>
+    <tr>
+
+    <td>CSO104
+    </td>
+    <td>INTRO OS/LAN ADMIN
+    </td>
+    </tr>
+    <tr>
+
+    <td>MTH122
+    </td>
+    <td>COMPUTER MATH
+    </td>
+    </tr>
+    <tr>
+
+    <td>TNY130
+    </td>
+    <td>TECHNOLOGY/SOCIETY
+    </td>
+    </tr>
+    <tr id="call2">
+    <td rowspan="5">Winter
+    </td>
+    <td>CSA103
+    </td>
+    <td>Business Applications I
+    </td>
+    </tr>
+    <tr>
+
+    <td>CSD102
+    </td>
+    <td>Programming Using C++
+    </td>
+    </tr>
+    <tr>
+
+    <td>CSD212
+    </td>
+    <td>Web Scripting Languages
+    </td>
+    </tr>
+    <tr>
+
+    <td>CSO102
+    </td>
+    <td>Introduction to LINUX
+    </td>
+    </tr>
+    <tr>
+
+    <td>CST104
+    </td>
+    <td>PC Hardware and Networking
+    </td>
+    </tr>
+    </table>
+    </section>
+
     <section class="gallery">
     <h2>Photo Gallery</h2>
     <div class="gallery-thumbnails">
@@ -111,17 +201,62 @@
     </div>
     </section>
 
-    </main>
+<section class="survey">
+    <h2>Survey</h2>
+    <form method="POST" action="https://formspree.io/mgevdyal">
+        <label>What is your name?<br>
+         <input name="name_feild" type="text" required>
+        </label>
+        <label>What is your email?<br>
+         <input name="email_feild" type="email" required>
+        </label>
+        <label>Which integer is best?<br>
+         <input name="best_integer" type="number">
+        </label>
+        <label>Which day is best?<br>
+         <input name="best_day" type="date">
+        </label>
+        <label>Which bear is best?<br>
+            <select>
+                <option disabled selected value></option>
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+                <option value="Care">Care</option>
+                <option value="Panda">Panda</option>
+                <option value="Polar">Polar</option>
+                <option value="Teddy">Teddy</option>
+            </select>
+        </label>
+        <label for="radio">Do you like radio buttons?<br>
+        <label for="yes">Yes</label>
+        <input type="radio" value="Yes" name="radio"><br>
+        <label for="No">No</label>
+        <input type="radio" value="No" name="radio"><br>
+        <label for="None of your business?">None of your business?</label>
+        <input type="radio" value="None of your business?" name="radio" checked><br>
+        </label>
+        <label>What is the meaning of life?</br>
+           <textarea name="life_meaning" rows="10" cols="100" placeholder="Enter the correct answer here"></textarea>
+        </label>
+        <input type="submit" value="Send" class="button">
+
+    </form>
+</section>
+</main>
     <footer>
         <hr>
         <blockquote>"Make your life a masterpiece; imagine no limitations on what you can be, have or do."<br>
         <span class="byline"><em>&mdash;Brian Trancy</em></span></blockquote>
         <p id="page-copyright">&copy; 2019 <a class="hype" href="mailto:19041331@saultcollege.ca?subject=Message%20from%20CSD120%20Website">Allen Mathew Benny</a></p>
-    
+
       <img src="images/sc-logo.png" sizes="80px" srcset="images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w" alt="logo">
     </footer>
 <div class="back-to-top"><a href="#top"> ◤ </a>
-</div>  
 </div>
+</div>
+<script>baguetteBox.run('.gallery-thumbnails', {
+    filter: /picsum\.photos\/id/i
+});
+</script>
 </body>
 </html>
